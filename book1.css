@@ -1,6 +1,8 @@
 /* === Overall Slider Wrapper === */
 .slider {
-  min-width: 700px;
+ 
+  max-width: 1000px;
+  margin: auto;
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
@@ -58,6 +60,7 @@ button:hover {
 }
 /* === Booking Container Below Slider === */
 .booking_container {
+   
     margin-top: 30px;
     padding: 20px;
     background: #f8f8f8;
@@ -111,4 +114,13 @@ button:hover {
         font-size: 14px;
         padding: 10px 20px;
     }
+}
+.list_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list_container ol{
+    list-style-type: disc;
+     line-height: 27px;
 }
