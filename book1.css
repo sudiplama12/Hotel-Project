@@ -1,0 +1,114 @@
+/* === Overall Slider Wrapper === */
+.slider {
+  min-width: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative; /* ensures sticky works */
+}
+
+  
+/* === Container That Holds All Slides === */
+.slider-container {
+    position: relative;
+  min-width: 700px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #ddd;
+}
+
+/* === Individual Slides === */
+.imageslide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+    top: 0;
+    left: 0;
+}
+
+/* === Navigation Buttons === */
+.buttongroup{
+ 
+ text-align: center;
+
+}
+/* Button styles */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+   text-align: center;
+}
+
+/* Hover effect */
+button:hover {
+    transform: scale(1.1);
+    background-color: #555;
+    cursor: pointer;
+   
+}
+/* === Booking Container Below Slider === */
+.booking_container {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    text-align: center;
+   position: sticky;
+   top: 20;
+
+  
+   
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Subtle floating effect */
+}
+
+.only_booking {
+    font-size: 18px;
+    color: #111;
+}
+
+.only_booking input[type="submit"] {
+    padding: 12px 25px;
+    margin-top: 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.only_booking input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+    .slider-container {
+        height: 250px;
+    }
+
+     button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .only_booking {
+        font-size: 16px;
+    }
+
+    .only_booking input[type="submit"] {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}

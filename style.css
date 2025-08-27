@@ -1,0 +1,204 @@
+/* Reset */
+* {
+  
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin:0px 30px;
+}
+
+
+/* Navbar */
+
+header {
+     background-color: rgb(89, 78, 78);
+  margin-top: 1px;
+  position: sticky;
+  top: 0;   /* stick at the very top */
+  z-index: 1000;
+ 
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 17px;
+  margin: 0 50px;
+  color: rgb(248, 9, 9);
+  height: 70px;
+}
+
+/* Logo */
+.logo {
+  margin-top: 10px;
+  align-items: center;
+
+  
+}
+
+.logo img {
+  max-height: 90px;
+  width: auto;
+  display: block;
+  cursor: pointer;
+}
+
+/* Navigation list */
+ul {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: rgba(255, 218, 11, 0.852);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+li a:hover {
+  color: white;
+}
+.imagecontainer {
+  width: 100%;
+ height: 90vh;/* set container height */
+  overflow: hidden; /* hide anything overflowing */
+}
+
+.imagecontainer img {
+  width: 100%;
+  height: 100%;
+ ; /* fits inside, may leave empty space */
+}
+.content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content_container{
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+.para_gold{
+    color: goldenrod;
+    font-size: 25px;
+}
+
+.content_container p{
+    font-weight: 550;
+    line-height: 25px;
+    
+}
+.buddha_container{
+    width: 100%;
+    height: 90vh;
+    
+}
+.container_img{
+   max-width: 1200px;
+    
+    margin: auto;
+ 
+}
+.container_img img{
+    width: 100%;
+    height: 92vh;
+   
+}
+.main_service_contain{
+    display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 10px;
+   grid-template-rows: minmax(100px,auto);
+   margin: 10PX;
+
+}
+
+.service_contain h1{
+    text-align: center;
+    text-decoration: underline rgb(207, 207, 203);
+}
+.card_container{
+  width: 100%;
+  height: 100%;
+ background-color: aliceblue;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 15px;
+  text-align: center;
+  margin: auto;
+  
+}
+
+.card_container img{
+  width: 100%;
+  border-radius: 10px;
+}
+.card_container button{
+  width:35%;
+  height: 40px;
+  font-size: 25px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+button a{
+  text-decoration: none;
+}
+.card_container:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.card_container button:hover{
+  transform: scale(1.05);
+  transition: trsndform 0.3 ease;
+  background-color:rgb(191, 246, 191);
+}
+
+.logo_container img{
+  max-width: 350px;
+  margin-bottom: 0;
+}
+.Location img{
+  width: 15px;
+}
+.main_footer_container{
+  text-align: center;
+}
+.remaining_footer_container{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+.Contact_us img{
+  width: 35px ;
+  height: 35px;
+}
+.main_foooter{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
+  color: gold;
+  height: 50px;
+}
+.last_foooter ol{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  
+}
+.last_foooter li{
+ margin: 20px;
+}
+
+
+
